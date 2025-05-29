@@ -7,10 +7,10 @@ const Layout = () => {
   return (
     <div>
       <Navbar />
-      <main className="flex-1 bg-white/80 dark:bg-gray-900 transition-colors duration-300 min-h-screen">
+      <main className="flex-1 bg-white/80 dark:bg-gray-900 transition-colors duration-300">
         {/* <Outlet /> */}
-        {/* <Builder /> */}
-        <Admin />
+        <Builder />
+        {/* <Admin /> */}
       </main>
     </div>
   );
