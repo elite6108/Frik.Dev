@@ -1,7 +1,6 @@
 const AdminTabs = ({ activeTab, setActiveTab }) => {
   const tabs = [
     { id: 'dashboard', label: 'Dashboard' },
-    { id: 'users', label: 'User Management' },
     { id: 'credits', label: 'Credit Management' },
     { id: 'live', label: 'Live Users' },
     { id: 'tickets', label: 'Tickets' },
@@ -9,7 +8,7 @@ const AdminTabs = ({ activeTab, setActiveTab }) => {
   ];
 
   return (
-    <div className="border-b border-gray-200 dark:border-gray-700 mb-6 overflow-x-auto">
+    <div className="border-b border-gray-300 dark:border-gray-700 mb-6 overflow-x-auto">
       <nav
         className="flex space-x-2 sm:justify-start whitespace-nowrap px-2 sm:px-0"
         aria-label="Tabs"

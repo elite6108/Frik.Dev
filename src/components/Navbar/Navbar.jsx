@@ -27,7 +27,7 @@ export default function Navbar() {
               className="md:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition cursor-pointer text-white"
               aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? <HiOutlineX size={24} />: <HiOutlineMenu size={24} />}
+              {isMobileMenuOpen ? <HiOutlineX size={24} /> : <HiOutlineMenu size={24} />}
             </button>
           </div>
         </div>

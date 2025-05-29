@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AdminTabs from "../components/AdminPanel/AdminTabs";
 import Dashboard from "../components/AdminPanel/Dashboard/Dashboard";
+import FAQ from "../components/AdminPanel/Faq/FAQ";
 
 function Admin() {
   const [activeTab, setActiveTab] = useState("dashboard");
@@ -15,7 +16,8 @@ function Admin() {
         </p>
       </div>
       <AdminTabs activeTab={activeTab} setActiveTab={setActiveTab} />
-      <Dashboard />
+      {/* <Dashboard /> */}
+      <FAQ />
     </div>
   );
 }
