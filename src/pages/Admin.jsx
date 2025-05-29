@@ -5,6 +5,7 @@ import FAQ from "../components/AdminPanel/Faq/FAQ";
 
 function Admin() {
   const [activeTab, setActiveTab] = useState("dashboard");
+
   return (
     <div className="w-full mx-auto px-8 sm:px-10 lg:px-20 pt-25 pb-8">
       <div className="text-center mb-8">
@@ -15,9 +16,11 @@ function Admin() {
           Manage your platform, users, and resources
         </p>
       </div>
+
       <AdminTabs activeTab={activeTab} setActiveTab={setActiveTab} />
-      {/* <Dashboard /> */}
-      <FAQ />
+
+      {activeTab === "dashboard" && <Dashboard />}
+      {activeTab === "faqs" && <FAQ />}
     </div>
   );
 }
