@@ -44,18 +44,19 @@ export default function NavLinks({ isMobile = false, onLinkClick }) {
           <li key={to}>
             <Link
               to={to}
-              className={`relative group transition-colors duration-200 ${
+              className={`py-2 px-1 relative group ${
                 active
                   ? "text-blue-600 dark:text-blue-400"
                   : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-              }`}
+              } transition-colors duration-200`}
+              aria-current={active ? "page" : undefined}
             >
-              <span>{label}</span>
-              <span
-                className={`absolute left-0 -bottom-1 h-0.5 bg-blue-500 rounded-full transition-all duration-300 ${
-                  active ? "w-full" : "w-0 group-hover:w-full"
-                }`}
-              />
+              <span className="relative z-10">{label}</span>
+              {active ? (
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"></span>
+              ) : (
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full group-hover:w-full transition-all duration-300"></span>
+              )}
             </Link>
           </li>
         );

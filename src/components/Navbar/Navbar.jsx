@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="w-full backdrop-blur bg-white/80 dark:bg-gray-900 border-b border-gray-300 dark:border-gray-800 transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-4 py-2 sm:py-3.5 flex justify-between items-center">
+        <div className="mx-auto px-4 md:px-15 py-2 sm:py-3.5 flex justify-between items-center">
           <Logo />
           <NavLinks />
 
