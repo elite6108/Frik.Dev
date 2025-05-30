@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <div>
       <Navbar />
-      <main className="flex-1 bg-white/80 dark:bg-gray-900 transition-colors duration-300 p-8">
+      <main className="flex-1 bg-white/80 dark:bg-gray-900 transition-colors duration-300 p-4 md:p-8">
         {/* <Outlet /> */}
         {/* <Admin /> */}
         {/* <Builder /> */}
