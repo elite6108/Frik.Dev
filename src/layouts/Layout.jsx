@@ -8,12 +8,13 @@ import ForgotPassword from '../components/ForgotPassword';
 import ResetPassword from '../components/ResetPassword';
 import NotFound from '../pages/NotFound';
 import Footer from '../components/Footer';
+import Home from '../pages/Home';
 
 const Layout = () => {
   return (
     <div>
       <Navbar />
-      <main className="flex-1 bg-white/80 dark:bg-gray-900 transition-colors duration-300 p-4 md:p-8 min-h-screen">
+      <main className="flex-1 bg-gray-50 dark:bg-gray-900 transition-colors duration-300 p-4 md:p-8 min-h-screen">
         {/* <Outlet /> */}
         {/* <Admin /> */}
         {/* <Builder /> */}
@@ -22,6 +23,7 @@ const Layout = () => {
         {/* <ForgotPassword onSubmit={(email) => console.log(email)} isLoading={console.log("loading")} error={console.log("err")} /> */}
         {/* <ResetPassword onSubmit={(data) => console.log(data)} isLoading={console.log("loading")} error={console.log("err")} /> */}
         {/* <NotFound /> */}
+        <Home />
       </main>
       <Footer />
     </div>

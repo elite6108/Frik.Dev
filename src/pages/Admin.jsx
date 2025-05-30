@@ -7,7 +7,7 @@ function Admin() {
   const [activeTab, setActiveTab] = useState("dashboard");
 
   return (
-    <div className="w-full mx-auto px-8 sm:px-10 lg:px-20 pt-4 pb-8">
+    <div className="w-full mx-auto px-8 sm:px-10 lg:px-20 pt-20 pb-8">
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-4xl font-medium text-gray-700 dark:text-gray-100">
           Admin Panel
