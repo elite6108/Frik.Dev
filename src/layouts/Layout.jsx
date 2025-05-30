@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Admin from '../pages/Admin';
 import Builder from '../pages/Builder';
 import SignIn from '../pages/SignIn';
+import SignUp from '../pages/SignUp';
 
 const Layout = () => {
   return (
@@ -12,7 +13,8 @@ const Layout = () => {
         {/* <Outlet /> */}
         {/* <Admin /> */}
         {/* <Builder /> */}
-        <SignIn onSubmit={(values) => console.log(values)} isLoading={console.log("loading")} error={console.log("err")} handleGitHubSignIn={console.log("github")} />
+        {/* <SignIn onSubmit={(values) => console.log(values)} isLoading={console.log("loading")} error={console.log("err")} handleGitHubSignIn={console.log("github")} /> */}
+        <SignUp onSubmit={(values) => console.log(values)} isLoading={console.log("loading")} error={console.log("err")} handleProviderSignUp={console.log("github")} />
       </main>
     </div>
   );
