@@ -7,6 +7,7 @@ import SignUp from '../pages/SignUp';
 import ForgotPassword from '../components/ForgotPassword';
 import ResetPassword from '../components/ResetPassword';
 import NotFound from '../pages/NotFound';
+import Footer from '../components/Footer';
 
 const Layout = () => {
   return (
@@ -20,8 +21,9 @@ const Layout = () => {
         {/* <SignUp onSubmit={(values) => console.log(values)} isLoading={console.log("loading")} error={console.log("err")} handleProviderSignUp={console.log("github")} /> */}
         {/* <ForgotPassword onSubmit={(email) => console.log(email)} isLoading={console.log("loading")} error={console.log("err")} /> */}
         {/* <ResetPassword onSubmit={(data) => console.log(data)} isLoading={console.log("loading")} error={console.log("err")} /> */}
-        <NotFound />
+        {/* <NotFound /> */}
       </main>
+      <Footer />
     </div>
   );
 };
