@@ -9,6 +9,7 @@ import Builder from './pages/Builder';
 import NotFound from './pages/NotFound';
 import ProtectedRoute from './routes/ProtectedRoute';
 import PublicRoute from './routes/PublicRoute';
+import Pricing from './pages/Pricing';
 
 const isAuthenticated = true;
 
@@ -17,6 +18,7 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/pricing" element={<Pricing />} />
 
         <Route element={<PublicRoute isAuthenticated={isAuthenticated} />}>
           <Route path="/login" element={<SignIn />} />
