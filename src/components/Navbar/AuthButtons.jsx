@@ -14,7 +14,7 @@ export default function AuthButtons({ isMobile = false, onClick }) {
         <Link
           to="/signup"
           onClick={onClick}
-          className="text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 font-medium rounded-md text-base px-4 py-2 transition-all duration-300 shadow-sm hover:shadow-md"
+          className="text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 font-medium rounded-md text-base px-4 py-2 transition-all duration-300 shadow-sm hover:shadow-md outline-none"
         >
           Sign Up
         </Link>
@@ -32,7 +32,7 @@ export default function AuthButtons({ isMobile = false, onClick }) {
       </Link>
       <Link
         to="/signup"
-        className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 font-medium rounded-md text-sm px-4 py-2 transition-all duration-200 shadow-sm hover:scale-105"
+        className="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-md text-sm px-4 py-2 transition-all duration-200 shadow-sm hover:scale-105"
       >
         Sign Up
       </Link>

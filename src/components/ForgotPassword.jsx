@@ -7,7 +7,7 @@ const ForgotPasswordSchema = Yup.object().shape({
 
 export default function ForgotPassword({ onSubmit, isLoading, error }) {
   return (
-    <div className="flex items-center justify-center bg-white dark:bg-gray-800 px-6 py-8 sm:px-6 lg:px-12 w-full md:w-1/2 lg:w-[33%] mx-auto rounded-lg border border-gray-300 dark:border-gray-700 mt-15">
+    <div className="flex items-center justify-center bg-white dark:bg-gray-800 px-6 py-8 sm:px-6 lg:px-12 w-full md:w-1/2 lg:w-[33%] mx-auto rounded-lg border border-gray-300 dark:border-gray-700 mt-35">
       <div className="w-full space-y-4">
         <h2 className="text-center text-3xl font-bold text-gray-700 dark:text-gray-200">
           Forgot password?

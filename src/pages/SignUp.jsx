@@ -61,7 +61,7 @@ export default function SignUp({ onSubmit, isLoading, error, handleProviderSignU
   const toggleConfirmPassword = () => setShowConfirmPassword((prev) => !prev);
 
   return (
-    <div className="flex items-center justify-center bg-white dark:bg-gray-800 px-6 py-8 sm:px-6 lg:px-12 w-full md:w-1/2 lg:w-[33%] mx-auto rounded-lg border border-gray-300 dark:border-gray-700">
+    <div className="flex items-center justify-center bg-white dark:bg-gray-800 px-6 py-8 sm:px-6 lg:px-12 w-full md:w-1/2 lg:w-[33%] mx-auto rounded-lg border border-gray-300 dark:border-gray-700 mt-20">
       <div className="w-full space-y-6">
         <div>
           <h2 className="mt-4 text-center text-3xl font-bold text-gray-700 dark:text-gray-200">

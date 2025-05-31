@@ -27,7 +27,7 @@ export default function Footer() {
 
   return (
     <footer className={`w-full py-16 px-4 sm:py-20 sm:px-6 lg:px-8 text-center ${content.wrapperClass}`}>
-      <h2 className="text-3xl font-bold text-white sm:text-4xl space-y-2 w-2/3 md:w-1/2 mx-auto">
+      <h2 className="text-3xl font-bold text-white sm:text-4xl space-y-2 w-2/3 md:w-[55%] mx-auto">
         {content.title.map((line, index) => (
           <span key={index} className="block">
             {line}
