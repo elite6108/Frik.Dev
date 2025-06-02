@@ -22,6 +22,7 @@ const FOOTER_CONFIG = {
 export default function Footer() {
   const { pathname } = useLocation();
   const content = FOOTER_CONFIG[pathname];
+  const isAuthenticated = true;
 
   if (!content) return null;
 
@@ -37,12 +38,12 @@ export default function Footer() {
 
       <p className="mt-4 text-lg text-blue-100 w-2/3 md:w-1/3 mx-auto">{content.description}</p>
 
-      <Link
+      {(location.pathname === '/' && !isAuthenticated ) && <Link
         to="/signup"
         className={`mt-8 inline-block px-8 py-3 rounded-md font-medium transition duration-200 hover:scale-101 ${content.buttonClass}`}
       >
         {content.buttonText}
-      </Link>
+      </Link>}
     </footer>
   );
 }

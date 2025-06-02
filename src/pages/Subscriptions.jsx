@@ -2,7 +2,7 @@ import { useState } from "react";
 import PricingCard from "../components/PricingCard";
 import FaqCard from "../components/FaqCard";
 
-export default function Pricing() {
+export default function Subscriptions() {
   const [billingPeriod, setBillingPeriod] = useState("monthly");
 
   const plans = [
@@ -95,11 +95,11 @@ export default function Pricing() {
 
   return (
     <div className="pt-20 pb-16 px-2 sm:px-6 lg:px-8 w-full bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-200">
-      <div className="max-w-7xl mx-auto text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-4">
+      <div className="text-center mb-16">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-4">
           Simple, transparent pricing
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-600 dark:text-gray-300">
           Choose the perfect plan for your needs. Always know what you'll pay.
         </p>
 

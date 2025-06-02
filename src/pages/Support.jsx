@@ -4,7 +4,7 @@ import FaqCard from "../components/FaqCard";
 import TicketForm from "../components/HelpPage/TicketForm";
 import MyTickets from "../components/HelpPage/MyTickets";
 
-export default function Help() {
+export default function Support() {
   const [activeTab, setActiveTab] = useState("faq");
 
   const tabs = [
@@ -81,12 +81,12 @@ export default function Help() {
 
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-12 py-20">
-      <h1 className="text-3xl font-bold text-gray-900 dark:text-white text-center">
-        Help & Support
-      </h1>
-      <p className="mt-4 text-lg text-gray-500 dark:text-gray-400 text-center mb-8">
-        Have a question or need assistance? We're here to help!
-      </p>
+      <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-4 text-center">
+          Help & Support
+        </h1>
+        <p className="text-lg text-gray-600 dark:text-gray-300 text-center mb-10">
+          Have a question or need assistance? We're here to help!
+        </p>
 
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
 

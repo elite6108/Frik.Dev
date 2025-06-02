@@ -1,71 +1,64 @@
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function NavLinks({ isMobile = false, onLinkClick }) {
-  const location = useLocation();
-  const isActive = (path) => location.pathname === path;
-
-  const isAuthenticated = true;
-
   const navLinks = [
     { label: "Home", to: "/" },
     { label: "My Projects", to: "/projects" },
-    {
-      label: isAuthenticated ? "Billing & Pricing" : "Pricing",
-      to: isAuthenticated ? "/billing" : "/pricing",
-    },
-    { label: "Help", to: "/help" },
+    { label: "My Subscriptions", to: "/subscriptions" },
+    { label: "Support", to: "/support" },
   ];
 
   if (isMobile) {
     return (
       <ul className="flex flex-col space-y-4 font-medium">
-        {navLinks.map(({ label, to }) => {
-          const active = isActive(to);
-          return (
-            <li key={to}>
-              <Link
-                to={to}
-                onClick={onLinkClick}
-                className={`block px-3 py-2 rounded ${
-                  active
+        {navLinks.map(({ label, to }) => (
+          <li key={to}>
+            <NavLink
+              to={to}
+              onClick={onLinkClick}
+              className={({ isActive }) =>
+                `block px-3 py-2 rounded ${
+                  isActive
                     ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-gray-800"
                     : "text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-                }`}
-              >
-                {label}
-              </Link>
-            </li>
-          );
-        })}
+                }`
+              }
+            >
+              {label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     );
   }
 
   return (
     <ul className="hidden md:flex items-center space-x-8 font-medium text-sm">
-      {navLinks.map(({ label, to }) => {
-        const active = isActive(to);
-        return (
-          <li key={to}>
-            <Link
-              to={to}
-              className={`py-2 px-1 relative group ${
-                active
+      {navLinks.map(({ label, to }) => (
+        <li key={to}>
+          <NavLink
+            to={to}
+            className={({ isActive }) =>
+              `py-2 px-1 relative group ${
+                isActive
                   ? "text-blue-600 dark:text-blue-400"
                   : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-              } transition-colors duration-200`}
-              aria-current={active ? "page" : undefined}
-            >
-              <span className="relative z-10">{label}</span>
-              {active ? (
-                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"></span>
-              ) : (
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full group-hover:w-full transition-all duration-300"></span>
-              )}
-            </Link>
-          </li>
-        );
-      })}
+              } transition-colors duration-200`
+            }
+          >
+            {({ isActive }) => (
+              <>
+                <span className="relative z-10">{label}</span>
+                <span
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full transition-all duration-300 ${
+                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                ></span>
+              </>
+            )}
+          </NavLink>
+        </li>
+      ))}
     </ul>
   );
 }
