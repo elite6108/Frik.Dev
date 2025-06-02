@@ -1,6 +1,6 @@
 import { useState } from "react";
-import PricingCard from "../components/PricingComponents/PricingCard";
-import FaqCard from "../components/PricingComponents/FaqCard";
+import PricingCard from "../components/PricingCard";
+import FaqCard from "../components/FaqCard";
 
 export default function Pricing() {
   const [billingPeriod, setBillingPeriod] = useState("monthly");

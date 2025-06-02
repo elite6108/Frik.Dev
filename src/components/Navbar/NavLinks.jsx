@@ -1,15 +1,20 @@
 import { Link, useLocation } from "react-router-dom";
 
-const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "My Projects", to: "/projects" },
-  { label: "Pricing", to: "/pricing" },
-  { label: "Help", to: "/help" },
-];
-
 export default function NavLinks({ isMobile = false, onLinkClick }) {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
+
+  const isAuthenticated = true;
+
+  const navLinks = [
+    { label: "Home", to: "/" },
+    { label: "My Projects", to: "/projects" },
+    {
+      label: isAuthenticated ? "Billing & Pricing" : "Pricing",
+      to: isAuthenticated ? "/billing" : "/pricing",
+    },
+    { label: "Help", to: "/help" },
+  ];
 
   if (isMobile) {
     return (

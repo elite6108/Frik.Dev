@@ -6,7 +6,7 @@ export default function FaqCard({ question, answer }) {
 
   return (
     <div
-      className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow transition-all duration-300 cursor-pointer"
+      className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow transition-all duration-300 cursor-pointer"
       onClick={() => setOpen(!open)}
     >
       <div
