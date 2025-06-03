@@ -3,7 +3,7 @@ import { Formik, Form, Field } from 'formik';
 export default function Security({ onSubmit }) {
   return (
     <div className="space-y-8">
-      <div className="bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm transition-colors duration-200">
+      <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-sm transition-colors duration-200">
         <div className="px-6 py-5 border-b border-gray-200 dark:border-gray-700">
           <h2 className="text-xl font-semibold">Change Password</h2>
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
