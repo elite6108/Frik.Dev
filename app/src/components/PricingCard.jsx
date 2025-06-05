@@ -1,5 +1,4 @@
-import * as ReactRouterDom from 'react-router-dom';
-const { Link } = ReactRouterDom;
+import { Link } from 'react-router-dom';
 import { Check } from 'lucide-react';
 
 export default function PricingCard({ plan, billingPeriod }) {

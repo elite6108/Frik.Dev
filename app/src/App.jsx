@@ -1,7 +1,3 @@
-import * as ReactRouterDom from 'react-router-dom';
-const { Routes, Route, useNavigate, useLocation } = ReactRouterDom;
-import ReactDOM from "react-dom/client";
-
 import Layout from './layouts/Layout';
 import Home from './pages/Home';
 import SignIn from './pages/SignIn';
@@ -16,14 +12,11 @@ import Subscriptions from './pages/Subscriptions';
 import Settings from './pages/Settings';
 import Support from './pages/Support';
 import MyProjects from './pages/MyProjects';
-// Import BrowserRouter to provide routing context
-
+import * as ReactRouterDom from 'react-router-dom';
+const { Routes, Route, useNavigate, useLocation } = ReactRouterDom;
 const isAuthenticated = true;
 
 export default function App() {
-  const navigate = useNavigate();
-  const location = useLocation();
-
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

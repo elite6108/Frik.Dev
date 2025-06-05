@@ -1,6 +1,5 @@
 import * as ReactRouterDom from "react-router-dom";
 const { Link } = ReactRouterDom;
-
 export default function Hero() {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 pt-30 pb-16 text-center">
