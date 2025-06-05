@@ -1,4 +1,5 @@
-import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import * as ReactRouterDom from 'react-router-dom';
+const { Routes, Route, useNavigate, useLocation } = ReactRouterDom;
 import ReactDOM from "react-dom/client";
 
 import Layout from './layouts/Layout';

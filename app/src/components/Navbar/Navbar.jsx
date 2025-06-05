@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import * as ReactRouterDom from "react-router-dom";
+const { Link } = ReactRouterDom;
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import ThemeToggle from "./ThemeToggle";

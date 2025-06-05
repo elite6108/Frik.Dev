@@ -1,4 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
+import * as ReactRouterDom from "react-router-dom";
+const { Link, useLocation } = ReactRouterDom;
 
 const FOOTER_CONFIG = {
   "/": {

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import * as ReactRouterDom from "react-router-dom";
+const { Link } = ReactRouterDom;
 
 export default function NotFound() {
   return (

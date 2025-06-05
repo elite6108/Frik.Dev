@@ -1,4 +1,5 @@
-import { Outlet, useLocation } from 'react-router-dom';
+import * as ReactRouterDom from 'react-router-dom';
+const { Outlet, useLocation } = ReactRouterDom;
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer';
 

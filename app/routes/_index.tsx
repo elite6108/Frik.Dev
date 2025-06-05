@@ -4,7 +4,8 @@ import { BaseChat } from '~/components/chat/BaseChat';
 import { Chat } from '~/components/chat/Chat.client';
 import { Header } from '~/components/header/Header';
 import App from "../src/App.jsx";
-import { BrowserRouter } from 'react-router-dom'; // ✅ Add this
+import * as ReactRouterDom from 'react-router-dom'; // ✅ Add this
+const { BrowserRouter } = ReactRouterDom;
 
 export const meta: MetaFunction = () => {
   return [{ title: 'Bolt' }, { name: 'description', content: 'Talk with Bolt, an AI assistant from StackBlitz' }];

@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from "react-router-dom";
+import * as ReactRouterDom from "react-router-dom";
+const { BrowserRouter } = ReactRouterDom;
 import App from './App.jsx'
 import './index.css'
 

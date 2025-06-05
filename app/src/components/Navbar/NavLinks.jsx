@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import * as ReactRouterDom from "react-router-dom";
+const { NavLink } = ReactRouterDom;
 
 export default function NavLinks({ isMobile = false, onLinkClick }) {
   const navLinks = [

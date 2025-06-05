@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import * as ReactRouterDom from "react-router-dom";
+const { Link } = ReactRouterDom;
 import { FaArrowRight } from "react-icons/fa";
 
 export default function BuilderCTA({ isMobile = false, onClick }) {
